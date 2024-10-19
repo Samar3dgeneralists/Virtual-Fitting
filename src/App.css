@@ -1,0 +1,30 @@
+.App {
+  text-align: center;
+  padding: 20px;
+}
+
+.content {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.webcam-container,
+.canvas-container {
+  width: 45%;
+  min-width: 300px;
+  margin: 10px;
+}
+
+.canvas-container canvas {
+  width: 100% !important;
+  height: auto !important;
+}
+
+@media (max-width: 768px) {
+  .webcam-container,
+  .canvas-container {
+    width: 100%;
+  }
+}
